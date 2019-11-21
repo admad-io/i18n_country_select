@@ -26,6 +26,9 @@ module I18nCountrySelect
 
       translations = if options[:exclude].present?
                        country_translations.reject { |ct| options[:exclude].include? ct[1] }
+                     elsif options[:only].present?
+                       only = options[:only].map(&:to_sym)
+                       country_translations.select { |ct| only.include? ct[1] }
                      else
                        country_translations
                      end
