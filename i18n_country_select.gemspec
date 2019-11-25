@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency('i18n', '~> 1', '>= 1.6')
   s.add_dependency('i18n-country-translations', '~> 1.0', '>= 1.3.0')
   s.add_runtime_dependency 'unicode_utils', '~> 1.0', '>= 1.0.0'
-  s.add_development_dependency 'rails', '~> 5'
-  s.add_development_dependency 'rspec-rails', '~> 3.5', '>= 3.5.2'
+  s.add_development_dependency 'rails', '~> 6'
+  s.add_development_dependency 'rspec-rails', '>= 4.0.0.beta2'
   s.licenses = ['MIT', 'GPL-3.0']
 end
